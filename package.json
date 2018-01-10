@@ -45,9 +45,10 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
-    "request": "^2.83.0",
     "react-strap": "0.0.1",
     "reactstrap": "^4.8.0",
+    "request": "^2.83.0",
+    "semantic-ui": "^2.2.13",
     "style-loader": "^0.19.1",
     "typeface-roboto": "0.0.45",
     "uglifyjs-webpack-plugin": "^1.1.5",
@@ -55,7 +56,7 @@
   },
   "devDependencies": {
     "mocha": "^4.1.0",
-    "nodemon": "^1.14.7",
+    "nodemon": "^1.14.10",
     "webpack-bundle-analyzer": "^2.9.1"
   }
 }
