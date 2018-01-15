@@ -4,7 +4,7 @@ import Stars from './Stars';
 
 const style = {
   height: '1000px',
-  width: '100%',
+  width: '50%',
   backgroundColor: ''
 };
 
@@ -25,7 +25,6 @@ export class MapContainer extends Component {
   };
 
   setZoomHandler(mapProps, map) {
-    console.log(map, mapProps)
     this.props.google.maps.event.addListener(map, 'zoom_changed', () => {
       this.centerMoved(mapProps, map);
     });
@@ -47,7 +46,6 @@ export class MapContainer extends Component {
   };
 
   render() {
-    console.log(GoogleApiWrapper)
     let markers = this.props.listings.map((listing, i) => {
       return (
         <Marker 

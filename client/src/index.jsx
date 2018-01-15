@@ -124,8 +124,15 @@ class App extends React.Component {
   };
 
   updateDates({ startDate, endDate }) {
-    this.setState({ startDate, endDate });
+    if (endDate === null) {
+      this.setState({ startDate });
+    }
+    else {
+      this.setState({ startDate, endDate });
+    }
+    console.log('SOMETHING IS BROKEN HERE')
   };
+
   updateFocusedInput(focusedInput) {
     this.setState({ focusedInput })
   };
@@ -241,7 +248,6 @@ class App extends React.Component {
   
   render() {
     const currentView = this.state.view;
-    console.log(currentView)
     let showPage = null;
     if (currentView === 'searchResults') {
       showPage = 
